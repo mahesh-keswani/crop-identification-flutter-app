@@ -1,3 +1,4 @@
+import 'package:carousel_pro/carousel_pro.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'dart:io';
@@ -79,12 +80,33 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return ListView(
       children: <Widget>[
-      //   Container(
-      //     child: ImageSliderWidget(
-      //       imageUrls: _imageUrls,
-      //       imageBorderRadius: BorderRadius.circular(8.0),
-      //   )
-      // )
+      Text(
+        'Crop Identification App',
+        style: TextStyle(
+          fontSize: 30,
+          fontWeight: FontWeight.bold,
+          color: Colors.greenAccent
+        ),
+        textAlign: TextAlign.center,
+      ),
+      Padding(
+        padding: EdgeInsets.only(top: 50),
+      ),
+      SizedBox(
+        height: 300,
+        width: 300.0,
+        child: Carousel(
+          images: [
+            AssetImage('assets/step1.jpeg'),
+            AssetImage('assets/step2.png'),
+            AssetImage('assets/step3.png'),
+            
+          ],
+        )
+      ),
+      Padding(
+        padding: EdgeInsets.only(top: 20),
+      ),
       Center(
         child: RaisedButton(
 

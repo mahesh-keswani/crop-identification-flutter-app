@@ -29,7 +29,16 @@ dependencies:
   tflite: ^1.0.4
   image_picker: ^0.6.3
   geolocator: ^5.2.0  
-  carousel_slider: ^1.4.1
+  carousel_pro: ^1.0.0
+  http: ^0.12.0+4  
+  expandable: ^4.0.2
+  share: ^0.6.3+5
+  map_launcher: ^0.4.1
+  firebase_core: ^0.4.3+2
+  cloud_firestore: ^0.13.0+1
+  firebase_storage: ^3.1.1
+  path: ^1.6.4
+  rflutter_alert: ^1.0.3
 
 dev_dependencies:
   flutter_test:

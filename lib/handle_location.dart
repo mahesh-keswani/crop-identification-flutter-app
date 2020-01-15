@@ -1,9 +1,11 @@
 import 'package:geolocator/geolocator.dart';
+import 'package:rflutter_alert/rflutter_alert.dart';
 
 class HandleLocation{
 
   double latitude;
   double longitude;
+  String error;
 
   Future<void> getLocation() async {
     try{
@@ -18,7 +20,7 @@ class HandleLocation{
       // print(longitude);
     }
     catch(e){
-      print(e);
+      error = e.toString();
     }
   }
 }

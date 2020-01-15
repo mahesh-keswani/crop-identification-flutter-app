@@ -4,6 +4,7 @@ import 'package:shifting_tabbar/shifting_tabbar.dart';
 import 'home_page.dart';
 import 'about_page.dart';
 import 'my_map.dart';
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -41,7 +42,7 @@ class HomePage extends StatelessWidget {
               ),
               ShiftingTab(
                 icon: Icon(Icons.map),
-                text: "Map"
+                text: "About"
               ),
               
             ],
@@ -50,7 +51,7 @@ class HomePage extends StatelessWidget {
             children: <Widget>[
               MyHomePage(),
               AboutPage(),
-              Text("My Map"),
+              Text("About"),
               
             ],
           ),
